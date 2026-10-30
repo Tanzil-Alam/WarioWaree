@@ -1,0 +1,76 @@
+[gd_scene format=3 uid="uid://cfcwfs3n2sg2j"]
+
+[ext_resource type="Script" uid="uid://cwx1b3n87q82w" path="res://Scenes/level_scene.gd" id="1_c7xwe"]
+[ext_resource type="Texture2D" uid="uid://dndw5v7x38fc8" path="res://wario ware style game (5).jpeg" id="2_2fcgv"]
+[ext_resource type="Texture2D" uid="uid://bslbfb1cixeup" path="res://images-Photoroom.png" id="2_c7xwe"]
+
+[node name="LevelScene" type="Node2D" unique_id=193269685]
+script = ExtResource("1_c7xwe")
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=489782752]
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Screenshot(663)" type="Sprite2D" parent="." unique_id=866190448]
+position = Vector2(571.5, 314.50003)
+scale = Vector2(0.6299511, 1.1163195)
+texture = ExtResource("2_2fcgv")
+
+[node name="GarlicContainer" type="HBoxContainer" parent="." unique_id=432057585]
+offset_left = 159.0
+offset_top = 27.0
+offset_right = 1048.0
+offset_bottom = 188.0
+
+[node name="Garlic" type="TextureRect" parent="GarlicContainer" unique_id=1059696573]
+custom_minimum_size = Vector2(50, 50)
+layout_mode = 2
+texture = ExtResource("2_c7xwe")
+expand_mode = 3
+stretch_mode = 5
+
+[node name="Garlic2" type="TextureRect" parent="GarlicContainer" unique_id=560085810]
+custom_minimum_size = Vector2(50, 50)
+layout_mode = 2
+texture = ExtResource("2_c7xwe")
+expand_mode = 3
+stretch_mode = 5
+
+[node name="Garlic3" type="TextureRect" parent="GarlicContainer" unique_id=1311666857]
+custom_minimum_size = Vector2(50, 50)
+layout_mode = 2
+texture = ExtResource("2_c7xwe")
+expand_mode = 3
+stretch_mode = 5
+
+[node name="Garlic4" type="TextureRect" parent="GarlicContainer" unique_id=1459876316]
+custom_minimum_size = Vector2(50, 50)
+layout_mode = 2
+texture = ExtResource("2_c7xwe")
+expand_mode = 3
+stretch_mode = 5
+
+[node name="Garlic5" type="TextureRect" parent="GarlicContainer" unique_id=1622541685]
+custom_minimum_size = Vector2(50, 50)
+layout_mode = 2
+texture = ExtResource("2_c7xwe")
+expand_mode = 3
+stretch_mode = 5
+
+[node name="Level" type="RichTextLabel" parent="." unique_id=875217127]
+offset_left = 483.0
+offset_top = 261.0
+offset_right = 1199.0
+offset_bottom = 555.0
+theme_override_colors/default_color = Color(0, 1, 0.51666665, 1)
+theme_override_font_sizes/normal_font_size = 60
+text = "Level 1"
+
+[node name="Timer" type="RichTextLabel" parent="." unique_id=584371657]
+offset_left = 57.0
+offset_top = 34.0
+offset_right = 676.0
+offset_bottom = 188.0
+theme_override_colors/default_color = Color(0.88495696, 0.59628785, 1, 1)
+theme_override_font_sizes/normal_font_size = 42
+text = "0.0"

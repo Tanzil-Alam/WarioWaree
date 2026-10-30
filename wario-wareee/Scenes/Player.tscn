@@ -1,0 +1,29 @@
+[gd_scene format=3 uid="uid://x37ogllew5qs"]
+
+[ext_resource type="Script" uid="uid://bcvdvw6c6k3kb" path="res://Scenes/player.gd" id="1_kyqiw"]
+[ext_resource type="Texture2D" uid="uid://bw8c8q63pxs2x" path="res://Mario.png" id="2_gntrk"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_wae4i"]
+radius = 32.0
+height = 94.0
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_yanj6"]
+radius = 4.0
+
+[node name="Player" type="CharacterBody2D" unique_id=827991522]
+script = ExtResource("1_kyqiw")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=409689828]
+position = Vector2(161, 606)
+scale = Vector2(0.8243243, 0.6081081)
+texture = ExtResource("2_gntrk")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=943155747]
+position = Vector2(161, 600)
+shape = SubResource("CapsuleShape2D_wae4i")
+
+[node name="Area2D" type="Area2D" parent="." unique_id=754241499]
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Area2D" unique_id=1669446650]
+position = Vector2(161, 600)
+shape = SubResource("CapsuleShape2D_yanj6")

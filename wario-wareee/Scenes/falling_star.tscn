@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://brkb2fg6wrms0"]
+
+[ext_resource type="Texture2D" uid="uid://ra5bexxn7c33" path="res://images-Photoroom (11).png" id="2_ls68b"]
+[ext_resource type="Script" uid="uid://b0f8g27unu0rc" path="res://Scenes/falling_star.gd" id="2_star_script"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_star"]
+radius = 20.0
+
+[node name="FallingStar" type="Area2D" unique_id=1475246517]
+collision_layer = 0
+script = ExtResource("2_star_script")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=457327599]
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("2_ls68b")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1339925546]
+shape = SubResource("CircleShape2D_star")
