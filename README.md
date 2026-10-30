@@ -14,3 +14,8 @@ Controls can vary between minigames.
 Play
 
 Duck Ware is published on itch.io. Link : https://siyam000111.itch.io/wario-ware-gamee
+
+
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/13c9be8a-58a6-4392-8d3e-4eb04bc83de3" />
+
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/d7908ba0-af25-4594-b224-52d38b6bea79" />
